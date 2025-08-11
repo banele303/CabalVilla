@@ -14,6 +14,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const isLumveleni = pathname?.startsWith("/lumveleni");
+  const isManiini = pathname?.startsWith("/maniini");
 
   const brand = isLumveleni
     ? {
@@ -23,6 +24,15 @@ export default function Navbar() {
         home: "/lumveleni",
         maps: "https://www.google.com/maps?q=Ngudza+Primary+School+Thohoyandou",
         handle: "@Lumveleni",
+      }
+    : isManiini
+    ? {
+        name: "Cabal Maniini",
+        tagline: "For Food & Drinks Lovers",
+        logo: "/logo.jpeg",
+        home: "/maniini",
+        maps: "https://www.google.com/maps?q=Maniini+Thohoyandou",
+        handle: "@CabalManiini",
       }
     : {
         name: "CabalVilla",
@@ -38,8 +48,9 @@ export default function Navbar() {
     { name: "Menu", href: "/menu" },
     { name: "Carwash", href: "/carwash" },
     { name: "Gallery", href: "/gallery" },
-    { name: "CabalVilla Brunche", href: "/cabalvilla" },
-    { name: "Lumveleni Brunche", href: "/lumveleni" },
+  { name: "CabalVilla Brunche", href: "/cabalvilla" },
+  { name: "Lumveleni Brunche", href: "/lumveleni" },
+  { name: "Cabal Maniini Brunche", href: "/maniini" },
     { name: "Contact", href: "/contact" },
   ];
 

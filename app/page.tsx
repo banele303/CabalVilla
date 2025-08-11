@@ -7,9 +7,9 @@ import Branches from "@/components/branches"
 import Menu from "@/components/menu"
 
 export const metadata: Metadata = {
-  title: "CabalVilla | Food, Drinks & Carwash in Tshivhulani & Lumveleni",
-  description: "CabalVilla: For Food & Drinks Lovers. Great food, vibrant nightlife, and a top‑notch carwash. Visit our Tshivhulani and Lumveleni branches.",
-  keywords: "CabalVilla, Tshivhulani, Lumveleni, food, drinks, carwash, kota, pap and meat, beer, ciders, wine, live music",
+  title: "CabalVilla | Food, Drinks & Carwash in Tshivhulani, Lumveleni & Maniini",
+  description: "CabalVilla: For Food & Drinks Lovers. Great food, vibrant nightlife, and a top‑notch carwash. Visit our Tshivhulani, Lumveleni and Maniini branches.",
+  keywords: "CabalVilla, Tshivhulani, Lumveleni, Maniini, food, drinks, carwash, kota, pap and meat, beer, ciders, wine, live music",
   openGraph: {
     title: "CabalVilla | Eat. Sip. Shine.",
     description: "Experience great food, refreshing drinks, live music, and premium carwash at CabalVilla.",

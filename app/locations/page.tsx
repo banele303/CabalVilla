@@ -20,6 +20,12 @@ const branches = [
     maps: "https://www.google.com/maps?q=Ngudza+Primary+School+Thohoyandou",
     phone: "+27 76 959 6653",
   },
+  {
+    name: "Cabal Maniini",
+    address: "Maniini · Thohoyandou · Limpopo",
+    maps: "https://www.google.com/maps?q=Maniini+Thohoyandou",
+    phone: "+27 76 959 6653",
+  },
 ]
 
 export default function LocationsPage() {

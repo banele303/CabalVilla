@@ -58,6 +58,29 @@ const branches = [
     ],
     hasCarwash: true,
   },
+  {
+    branch: "Branch 3",
+    name: "Cabal Maniini",
+    tagline: "For Food & Drinks Lovers",
+    address: "Maniini · Thohoyandou · Limpopo",
+    maps: "https://www.google.com/maps?q=Maniini+Thohoyandou",
+    phone: "+27 76 959 6653",
+    hours: [
+      { day: "Mon–Thu", time: "10:00 – 22:00" },
+      { day: "Fri–Sat", time: "10:00 – 01:00" },
+      { day: "Sun", time: "10:00 – 21:00" },
+    ],
+    products: [
+      "Pap & Meat",
+      "Kota",
+      "Chicken & Chips",
+      "Wors & Russians",
+      "Beers & Ciders",
+      "Wines & Spirits",
+      "Soft Drinks",
+    ],
+    hasCarwash: false,
+  },
 ]
 
 export default function BranchesPage() {
@@ -112,7 +135,7 @@ export default function BranchesPage() {
 
                 <div className="flex flex-col sm:flex-row gap-2 pt-2">
                   {/* Deep branch pages */}
-                  <Link href={b.name.startsWith("Lumveleni") ? "/lumveleni" : "/"} className="inline-flex items-center text-primary hover:underline">
+                  <Link href={b.name.startsWith("Lumveleni") ? "/lumveleni" : b.name.startsWith("Cabal Maniini") ? "/maniini" : "/cabalvilla"} className="inline-flex items-center text-primary hover:underline">
                     View Branch Page <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
                   <Link href="/menu" className="inline-flex items-center text-primary hover:underline">

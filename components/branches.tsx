@@ -17,6 +17,13 @@ const branches = [
     maps: "https://www.google.com/maps?q=Ngudza+Primary+School+Thohoyandou",
     phone: "+27 76 959 6653",
   },
+  {
+    name: "Cabal Maniini",
+    tagline: "For Food & Drinks Lovers",
+    address: "Maniini • Thohoyandou • Limpopo",
+    maps: "https://www.google.com/maps?q=Maniini+Thohoyandou",
+    phone: "+27 76 959 6653",
+  },
 ]
 
 export default function Branches() {
@@ -25,9 +32,9 @@ export default function Branches() {
       <div className="container">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">Find Us</h2>
-          <p className="text-muted-foreground mt-2">Two vibrant spots ready to welcome you.</p>
+          <p className="text-muted-foreground mt-2">Three vibrant spots ready to welcome you.</p>
         </div>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {branches.map((b) => (
             <Card key={b.name} className="hover:shadow-lg transition-shadow">
               <CardHeader>

@@ -30,6 +30,7 @@ export default function Hero() {
 
 	const mapsLink = "https://www.google.com/maps?q=Makwarela+Tshivhulani+Hayani+Hospital+R523"
 	const lumveleniMaps = "https://www.google.com/maps?q=Ngudza+Primary+School+Thohoyandou"
+	const maniiniMaps = "https://www.google.com/maps?q=Maniini+Thohoyandou"
 
 	return (
 		<section
@@ -138,6 +139,18 @@ export default function Hero() {
 										</Button>
 										<Button size="sm" className="h-8 bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 hover:text-white cursor-pointer pointer-events-auto" asChild>
 											<Link href={lumveleniMaps} target="_blank" className="cursor-pointer"><MapPin className="mr-1 h-3 w-3" /> Directions</Link>
+										</Button>
+									</div>
+								</div>
+								<div className="p-4 rounded-xl bg-black/30 border border-white/10">
+									<div className="font-medium text-white">Cabal Maniini</div>
+									<div className="text-white/80 text-xs mb-3">For Food & Drinks Lovers</div>
+									<div className="flex flex-wrap gap-2 relative z-30">
+										<Button size="sm" className="h-8 bg-red-500 text-white hover:bg-red-400 cursor-pointer pointer-events-auto" asChild>
+											<Link href="/maniini" className="cursor-pointer">View</Link>
+										</Button>
+										<Button size="sm" className="h-8 bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 hover:text-white cursor-pointer pointer-events-auto" asChild>
+											<Link href={maniiniMaps} target="_blank" className="cursor-pointer"><MapPin className="mr-1 h-3 w-3" /> Directions</Link>
 										</Button>
 									</div>
 								</div>
