@@ -23,7 +23,7 @@
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <p>hosting error</p>
+      <p>hosting errr</p>
       {/* <Hero />
       <Services />
       <Menu />
